@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPedidos = new System.Windows.Forms.DataGridView();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -46,18 +46,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvPedidos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(379, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(526, 186);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPedidos.Location = new System.Drawing.Point(379, 23);
+            this.dgvPedidos.Name = "dgvPedidos";
+            this.dgvPedidos.RowHeadersWidth = 51;
+            this.dgvPedidos.RowTemplate.Height = 24;
+            this.dgvPedidos.Size = new System.Drawing.Size(526, 186);
+            this.dgvPedidos.TabIndex = 0;
             // 
             // txtNombre
             // 
@@ -119,6 +119,7 @@
             this.btnMostrar.TabIndex = 8;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // btnEliminar
             // 
@@ -137,6 +138,7 @@
             this.btnModificar.TabIndex = 10;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnExportar
             // 
@@ -146,6 +148,7 @@
             this.btnExportar.TabIndex = 11;
             this.btnExportar.Text = "Exportar";
             this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // label1
             // 
@@ -223,10 +226,10 @@
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPedidos);
             this.Name = "Form1";
             this.Text = "Tipo";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,7 +237,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPedidos;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.TextBox txtPrecio;
